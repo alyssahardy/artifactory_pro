@@ -49,6 +49,9 @@ class artifactory_pro(
     binary_provider_cache_maxsize  => $binary_provider_cache_maxsize,
     binary_provider_filesystem_dir => $binary_provider_filesystem_dir,
     binary_provider_cache_dir      => $binary_provider_cache_dir,
+    binary_provider_bucket         => $binary_provider_bucket,
+    binary_provider_identity       => $binary_provider_identity,
+    binary_provider_credential     => $binary_provider_credential,
     jdbc_driver_url                => $jdbc_driver_url,
   }
   -> class{'::artifactory_pro::config': }
