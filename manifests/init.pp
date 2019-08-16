@@ -28,6 +28,9 @@ class artifactory_pro(
   Optional[Integer] $binary_provider_cache_maxsize                                     = undef,
   Optional[String] $binary_provider_filesystem_dir                                     = undef,
   Optional[String] $binary_provider_cache_dir                                          = undef,
+  Optional[String] $binary_provider_bucket                                             = undef,
+  Optional[String] $binary_provider_identity                                           = undef,
+  Optional[String] $binary_provider_credential                                         = undef,
   Hash $plugin_urls                                                                    = {},
 ) {
 

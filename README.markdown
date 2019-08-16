@@ -157,6 +157,9 @@ All the metadata and the binaries are stored as BLOBs in the database.
 ###### cachedFS
 Works the same way as filesystem but also has a binary LRU (Least Recently Used) cache for upload/download requests. Improves performance of instances with high IOPS (I/O Operations) or slow NFS access.
 
+###### clusterGCS
+This is the setting used for clustered GCS storage.
+
 ###### S3
 This is the setting used for S3 Object Storage.
 
@@ -179,6 +182,18 @@ Optional setting for the artifactory filestore location. The binary.provider.typ
 ##### `binary_provider_cache_dir`
 
 Optional setting for the location of the cache. This should be set to your $ARTIFACTORY_HOME directory directly (not on the NFS).
+
+##### `binary_provider_credential`
+
+Optional setting for clusterGCS filestore. Your cloud storage provider authentication credential.
+
+##### `binary_provider_identity`
+
+Optional setting for clusterGCS filestore. Your cloud storage provider identity.
+
+##### `binary_provider_bucket`
+
+Optional setting for clusterGCS filestore.
 
 #### artifactory::plugin
 
